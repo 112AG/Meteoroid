@@ -6,6 +6,7 @@ import Quote from './components/Quote/Quote'
 import CardData from "./components/Lectures/CardData";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Form from "./components/Form/Form";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/quote" element={<Quote />} />
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/form" element={<Form />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<PageNotFound to="/"  />} />
+          
         </Routes>
       </Router>
     </div>
