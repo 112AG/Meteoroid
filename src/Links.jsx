@@ -11,6 +11,7 @@ function Links() {
           <li className='list-blue'><Link className='font-semibold text-blue-600 underline' to="/quote">Generate Weather</Link></li>
           <li className='list-blue'><Link className='font-semibold text-blue-600 underline' to="/testimonial">Slider on Array</Link></li>
           <li className='list-blue'><Link className='font-semibold text-blue-600 underline' to="/form">Form</Link></li>
+          <li className='list-blue'><Link className='font-semibold text-blue-600 underline' to="/auth">Authentic Page</Link></li>
         </ol>
 </div>
         <style>{`
