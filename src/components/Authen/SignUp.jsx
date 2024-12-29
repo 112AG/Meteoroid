@@ -31,6 +31,8 @@ function SignUp({formData, setFormData , setAuthData, authData}) {
         //     id : authData.length+1
         // })
         navigate('/dashboard');
+        // console.log(authData);
+        // console.log(formData);
     }
   return (
     <div className='h-screen w-full flex items-center justify-center bg-gray-900 text-white'>

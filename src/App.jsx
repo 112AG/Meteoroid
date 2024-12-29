@@ -23,6 +23,7 @@ function App() {
           email: '',
           password: '',
       })
+      const [privatePage, setPrivatePage] = useState(false);
       
   return (
     <div>
@@ -36,10 +37,10 @@ function App() {
           <Route path="/form" element={<Form />} />
           <Route path="*" element={<PageNotFound to="/"  />} />
           <Route path="/auth" element={<Top/>} /> 
-          <Route path="/login" element={<Login authData={authData}/>}/>
+          <Route path="/login" element={<Login authData={authData} setPrivatePage={setPrivatePage}/>}/>
           <Route path="/signup" element={<SignUp formData={formData} setFormData={setFormData} setAuthData={setAuthData} authData={authData} />}/>
           <Route path="/dashboard" element={
-            // <PrivateRoute authData={authData}  formData={formData}>
+            // <PrivateRoute privatePage={privatePage}>
               <DashBoard formData={formData}/>
             // </PrivateRoute>
           }/>
